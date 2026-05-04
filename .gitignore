@@ -11,3 +11,5 @@ TEMP/*
 *.csv
 *.gz
 *.pgn
+*.default
+/piece set/*

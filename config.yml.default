@@ -3,7 +3,7 @@ url: "https://lichess.org/"        # Lichess base URL.
 
 engine:                            # Engine settings.
   dir: "./engines/"                # Directory containing the engine. This can be an absolute path or one relative to lichess-bot/.
-  name: "engine_name"              # Binary name of the engine to use.
+  name: "PolicyMove"               # Homemade engine class name.
   debug: False                     # When enabled, log all startup communication with the engine.
 # interpreter: "java"
 # interpreter_options:
@@ -12,6 +12,10 @@ engine:                            # Engine settings.
                                    # NOTE: If working_dir is set, the engine will look for files and directories relative to this directory, not where lichess-bot was launched. Absolute paths are unaffected.
   protocol: "uci"                  # "uci", "xboard" or "homemade"
   ponder: true                     # Think on opponent's time.
+
+  homemade_options:
+#   model_path: "engines/train_eval/model_artifacts/policy_xgb.joblib"
+#   threshold: 0.5
 
   polyglot:
     enabled: false                 # Activate polyglot book.
@@ -94,6 +98,9 @@ engine:                            # Engine settings.
 
   homemade_options:
 #   Hash: 256
+#   model_path: "engines/train_eval/model_artifacts/policy_xgb.joblib"
+#   threshold: 0.5
+#   search_timeout_seconds: 2.75
 
   uci_options:                     # Arbitrary UCI options passed to the engine.
     Move Overhead: 100             # Increase if your bot flags games too often.

@@ -1,0 +1,7 @@
+{
+  "artifact_path": "C:\\Users\\srina\\Coding\\Chess-Bot\\lichess-bot\\engines\\train_eval\\model_artifacts\\policy_xgb.joblib",
+  "feature_count": 101,
+  "numeric_feature_count": 90,
+  "random_seed": 42,
+  "threshold": 0.5
+}

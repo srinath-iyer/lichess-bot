@@ -2,7 +2,7 @@
 
 from lib.engine_wrapper import MinimalEngine
 
-from engines.search import RandomMove
+from engines.search import PolicyMove, RandomMove
 
 
 class ExampleEngine(MinimalEngine):
